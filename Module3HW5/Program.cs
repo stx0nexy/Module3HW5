@@ -2,11 +2,13 @@
 
 namespace Module3HW5
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+            Methods methods = new Methods();
+            string helloWorld = methods.GetAllTextAsync().Result;
+            Console.WriteLine(helloWorld);
         }
     }
 }
